@@ -1,0 +1,340 @@
+/* css design  */
+/* style for body */
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(205, 205, 205);
+}
+/* style for single task div container */
+
+
+.container{
+    height: auto;
+    width:70%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgb(176, 176, 176);
+    padding: 15px 0;
+}
+/*  Station Container*/
+.station-container{
+    width: 100%;
+    background-color: rgb(57, 57, 128);
+    display: flex;
+    padding: 20px;
+}
+.station-icon{
+    background-color: orange;
+    box-shadow: 0 0 2px 2px rgb(239, 199, 126);
+    width: 110px;
+    height: 110px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding: 5px;
+    padding-top: 20px;
+
+}
+.music-categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20px;
+}
+.category-song{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    margin: 9px;
+}
+.category-song:hover{
+    opacity: 1;
+    box-shadow: 0 0 2px 0.6px rgb(229, 222, 222);
+}
+#song1{
+    background-image: url("https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9jayUyMG11c2ljfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+}
+#song2{
+    background-image: url("https://www.teahub.io/photos/full/151-1510005_love-song-background-hd.jpg");
+}
+#song3{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-retro-music-poster-background-material-image_131277.jpg");
+}
+#song4{
+    background-image: url("https://media.self.com/photos/635c420e851dc51b97bc3a77/4:3/w_2560%2Cc_limit/GettyImages-1272137208.jpg");
+}
+#song5{
+    background-image: url("https://wallpapercave.com/wp/wp1879835.jpg");
+}
+#song6{
+    background-image: url("https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpbGwlMjBtdXNpY3xlbnwwfHwwfHw%3D&w=1000&q=80");
+}
+
+.three-categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 750px;
+    border: 1px solid white;
+    margin: 20px auto;
+}
+.category-block{
+    width: 30%;
+    height: 130px;
+    margin: 10px;
+    position: relative;
+    opacity: 0.8;
+    overflow: hidden;
+}
+.category-block img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.category-block p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+}
+.category-block img:hover{
+    transform: scale(1.3);
+}
+.latest-english-hindi{
+    width: 100%;
+}
+
+.tasks-container{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.singleTask{
+    border-top: 1px solid rgb(135, 135, 135);
+    width: 90%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+}
+.check-descri-box{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media (max-width:650px) {
+    .check-descri-box{
+        width: 45%;
+    }
+}
+/* style for del check */
+.delechack{
+    margin: 15px;
+
+}
+/* style for category section */
+
+.catesec{
+    border: 1px solid rgb(148, 148, 148);
+}
+
+/* style for TODO heading */
+
+.todoheading{
+    color: black;
+    text-align: center;
+}
+
+/* style for form */
+
+.form_class{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* style for description area */
+
+.desc_Class input{
+    height: 50px;
+    width: 80%;
+    margin: 15px;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 0.3s;
+    border: 0.5px solid  rgb(177, 177, 177);
+    border-radius: 8px;
+    outline: none;
+}
+/* implemented some hover in description section */
+.desc_Class input:hover{
+    background-color:rgb(226, 226, 226);
+    outline: none;
+}
+.desc_Class input:focus{
+    background-color:rgb(226, 226, 226);
+}
+/* design for select and option START */
+/* style for select and options input input area */
+
+.select_and_input{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.select_and_input select{
+    height: 45px;
+    width: 40%;
+    transition: transform 0.3s;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 50px;
+    border: 1px solid rgb(161, 161, 161);
+}
+.select_and_input input{
+    height: 45px;
+    width: 40%;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid rgb(161, 161, 161);
+    transition: transform 0.3s;
+}
+.select_and_input input:focus{
+    outline: none;
+}
+.select_and_input select:hover{
+    background-color: rgb(226, 226, 226);
+}
+.select_and_input input:hover{
+    background-color: rgb(226, 226, 226);
+    border: 1px solid grey;
+
+}
+/* design for select and option END */
+
+/* design for dates value */
+.datesValues{
+    transition: transform 0.3s;
+}
+.datesValues:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: bisque;
+}
+/* design for button */
+.buttonDesign{
+    height: 50px;
+    width: 120px;
+    color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid rgb(123, 123, 123);
+}
+.buttonDesign:hover{
+    box-shadow: 0px 0px 5px 2px white;
+}
+.colorRed{
+    background-color: rgb(235, 13, 13);
+}
+
+.colorRed:hover{
+    background-color: rgb(205, 2, 2);
+}
+.colorGrey{
+    background-color: rgb(141, 141, 141);
+}
+.colorGrey:hover{
+    background-color: rgb(111, 111, 111);
+}
+.commonClass{
+    height: 18px;
+    width: 75px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;    
+    color: white;
+}
+/* design for edit sction */
+/* .editClass{
+    height: 18px;
+    background-color: rgb(177, 89, 89);
+}
+.editClass:hover{
+    background-color: rgb(177, 89, 89);
+} */
+
+.editClass a{
+text-decoration: none;
+color: white;
+border: 1px solid  rgb(136, 136, 136);
+padding: 5.7px 10px;
+background-color: rgb(171, 84, 84);
+border-radius: 2px;
+}
+.editClass a:hover{
+    background-color: rgb(132, 35, 35);
+}
+/* for placing placeholder in the center  */
+input[type="textarea"]::placeholder { 
+                  
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+/* design for EDIT button*/
+.edit-button{
+    margin-top: 20px;
+    height: 30px;
+    font-size: 16px;
+    width: 90px;
+    border: 1px solid rgb(123, 123, 123);
+    background-color: rgb(172, 85, 85);
+    color: white;
+}
+.edit-button:hover{
+    background-color: rgb(141, 63, 63);
+}
+input.delechack{
+    width: 17px;
+    height: 17px;
+}
+
+/* Design for different category */
+.work{
+    background-color:rgb(231, 96, 96);
+}
+.Personal{
+    background-color: rgb(97, 196, 235);
+
+}
+.Claeaning{
+    background-color: rgb(76, 217, 76);
+}
+.Otheres{
+    background-color: rgb(65, 57, 218);
+}
+.name_and_dueDate{
+    height: auto;
+    width: 200px;
+}
+.dueDate{
+    width: fit-content;
+}
+.color-white{
+    color: black;
+}
