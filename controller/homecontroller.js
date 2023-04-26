@@ -11,7 +11,7 @@ module.exports.home = function(req,res){
         }
         
         return res.render('homePage',{
-            title:"Home",
+            title:"ToDo List",
             todoList:todo
            
         })
@@ -20,7 +20,6 @@ module.exports.home = function(req,res){
 // function for new Data
 function DateValeu(dueDate){
     let months = ['jan','feb','mar','Apr','May','june','july','aug','sept','oct','nov','dec'] // static value for implementing monthe value
-
 
     newdate = '';
     let monapp = '';
